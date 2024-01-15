@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+    <style>
+        * {
+            font-family: sans-serif;
+        
+        }
+        body{
+            /* color: white; */
+            background-color: #bed6e2;
+        }
+
+        h1 {
+            font-size: 30px;
+            text-align: center;
+        }
+        
+        input {
+            width: 40vw;
+        }
+
+        table {
+            margin-top: 7px;
+            border: 1.5px black solid;
+            background-color: #95aab4;
+            width: 96vw;
+        }
+
+        td {
+            padding: 4px;
+        }
+
+        .a2{
+            width: 10vw;
+        }
+
+        .a1{
+            width: 20vw;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Job Application Form</h1>
+    </header>
+    <form>
+        <table>
+            <tr><b style="font-size: 20px; "> &nbsp Personal Information :</b></tr>
+            <tr>
+                <td><label for="name">Name </label></td>
+                <td><input type="text" id="name" placeholder="Enter your Name"></td>
+            </tr>
+            <tr>
+                <td><label for="adr">Address</label></td>
+                <td><input type="text" id="adr" placeholder="Enter your Address"></td>
+            </tr>
+            <tr>
+                <td><label for="phn">Phone Number</label></td>
+                <td><input type="text" id="phn" placeholder="Enter Your Number"></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email</label></td>
+                <td><input type="text" id="email" placeholder="Enter your Email"></td>
+            </tr>
+            <tr>
+                <td><label for="DOB">Date of Birth</label></td>
+                <td><input type="date" id="DOB"></td>
+            </tr>
+            <tr>
+                <td><label for="qual">Qualification</label></td>
+                <td>
+                    <select name="qual" id="qual">
+                        <option>Select</option>
+                        <option>Bachelor's</option>
+                        <option>Master's</option>
+                        <option>PhD</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="exp">Experience</label></td>
+                <td>
+                    <select name="exp" id="exp">
+                        <option>Select</option>
+                        <option>1-2 Year</option>
+                        <option>3-5 Year</option>
+                        <option>6-10 Year</option>
+                        <option>More than 10 Year</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+
+        <br><br>
+
+        <table>
+            <tr><b style="font-size: 20px; "> &nbsp Employment Information :</b></tr>
+            <tr>
+                <td><label for="dj">Desired Job Title</label></td>
+                <td>
+                    <select name="dj" id="dj" class="a1">
+                        <option>Select</option>
+                        <option>Software Engineer</option>
+                        <option>Full Stack Web Developer</option>
+                        <option>Frontend Developer</option>
+                        <option>Backend Developer</option>
+                        <option>Data Scientist</option>
+                        <option>Graphics Designer</option>
+                        <option>Cyber Security Manager</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="ds">Desired Salary</label></td>
+                <td><input type="number" id="ds" placeholder="Amount" class="a1"></td>
+            </tr>
+            <tr>
+                <td>Availability</td>
+                <td>
+                    <label for="ft"><input type="radio" id="ft" value="avl" name="avl" class="a2">Full Time</label> 
+                    <label for="pt"><input type="radio" id="pt" value="avl" name="avl" class="a2">Part Time</label>
+                </td>
+            </tr>
+            <tr>
+                <td>City Preference</td>
+                <td>
+                    <label for="del"><input type="checkbox" name="del" id="del" class="a2">Delhi</label> <br>
+                    <label for="mum"><input type="checkbox" name="mum" id="mum" class="a2">Mumbai</label><br>
+                    <label for="ben"><input type="checkbox" name="ben" id="ben" class="a2">Bengaluru</label><br>
+                    <label for="noi"><input type="checkbox" name="noi" id="noi" class="a2">Noida</label><br>
+                </td>
+            </tr>
+        </table>
+
+        <br>
+
+        <input type="submit" style="width: 20vw;">
+
+    </form>
+
+</body>
+
+</html>
